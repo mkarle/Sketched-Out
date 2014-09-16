@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SketchedOut.iml" filepath="$PROJECT_DIR$/SketchedOut.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SketchedOut/SketchedOut-SketchedOut.iml" filepath="$PROJECT_DIR$/SketchedOut/SketchedOut-SketchedOut.iml" />
+    </modules>
+  </component>
+</project>
+

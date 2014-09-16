@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pastSketch"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/pastPrompt"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_toRightOf="@id/pastSketch"
+            />
+        <TextView
+            android:id="@+id/pastDate"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_toRightOf="@id/pastSketch"
+            android:layout_marginTop="60dp"/>
+</RelativeLayout>

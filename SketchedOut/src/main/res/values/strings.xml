@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sketched Out</string>
+    <string name="action_settings">Settings</string>
+    <string name="save">Sketch saved to Gallery</string>
+    <string name="unsaved">Sketch could not be saved</string>
+    <string name="sketch">SKETCH</string>
+    <string name="guess">GUESS</string>
+    <string name="black">#FF000000</string>
+    <string name="gray">#FFCCCCCC</string>
+    <string name="white">#FFFFFFFF</string>
+    <string name="red">#FFFF0000</string>
+    <string name="green">#FF00FF00</string>
+    <string name="blue">#FF0000FF</string>
+    <string name="theme_orange">#FFFF8800</string>
+    <string name="title_activity_recap">RecapActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_past">PastActivity</string>
+    <string name="title_sketch_list">Sketches</string>
+    <string name="title_sketch_detail">Sketch Detail</string>
+
+</resources>

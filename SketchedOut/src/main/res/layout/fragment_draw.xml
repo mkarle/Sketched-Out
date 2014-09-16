@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".GameActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/paint_colors"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/color_black"
+            android:src="@drawable/paint"
+            android:background="@color/black"
+            android:tag="@string/black"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/color_white"
+            android:src="@drawable/paint"
+            android:background="@color/white"
+            android:tag="@string/white"
+
+            android:layout_marginRight="2dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/color_gray"
+            android:src="@drawable/paint"
+            android:background="@color/gray"
+            android:tag="@string/gray"
+
+            android:layout_marginRight="2dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/color_red"
+            android:src="@drawable/paint"
+            android:background="@color/red"
+            android:tag="@string/red"
+
+            android:layout_marginRight="2dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/color_green"
+            android:src="@drawable/paint"
+            android:background="@color/green"
+            android:tag="@string/green"
+
+            android:layout_marginRight="2dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/color_blue"
+            android:src="@drawable/paint"
+            android:background="@color/blue"
+            android:tag="@string/blue"
+
+            android:layout_marginRight="2dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="80dp"
+    >
+    <com.murnerapps.sketchedout.sketchedout.DrawingView
+        android:id="@+id/drawing"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+
+        android:background="@color/white"
+        android:layout_alignParentBottom="true" />
+    <ImageView
+        android:id="@+id/deleteDrawing"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignRight="@id/drawing"
+
+        android:src="@drawable/xbutton"/>
+    <ImageView
+        android:id="@+id/undoDrawing"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="48dp"
+        android:layout_alignRight="@id/drawing"
+
+        android:src="@drawable/undobutton"
+        />
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_alignLeft="@id/drawing"
+
+        android:src="@drawable/savebutton"/>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/drawBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@color/theme_orange"
+        android:orientation="vertical"
+
+        android:layout_alignParentBottom="true"
+
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/sketchText"
+            android:layout_width="fill_parent"
+            android:layout_height="24dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/sketch"
+
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+
+            android:textColor="@color/white"
+            android:background="#FFFFBB33" />
+
+        <TextView
+            android:id="@+id/sketchPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/sketchText"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:layout_toLeftOf="@+id/nextSketch"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/nextSketch"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/next"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+
+            android:layout_alignTop="@+id/sketchPrompt"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+
+            android:tag="sketch"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
